@@ -25,7 +25,10 @@ SECRET_KEY = '#2@r*9!ttzq@i-@hfp!r*hnk%e+=q((v1q=u(2=y37t5aj(88j'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "127.0.0.1",
+    "localhost"
+]
 
 
 # Application definition
@@ -38,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'aegis'
 ]
 
 MIDDLEWARE = [
@@ -80,7 +84,7 @@ DATABASES = {
         'NAME': 'aegis_rider',
         'USER': 'postgres',
         'PASSWORD': 'mzta_swift09',
-        'HOST': '127.0.0.1',
+        'HOST': '',
         'PORT': '5432',
     }
 }
